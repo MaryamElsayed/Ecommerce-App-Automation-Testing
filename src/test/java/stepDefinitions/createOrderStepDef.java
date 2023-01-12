@@ -40,11 +40,11 @@ public class createOrderStepDef {
     @Then("message displayed that order placed successfully")
     public void message_displayed_that_order_placed_successfully()
     {
-//        System.out.println(driver.getCurrentUrl());
-//        String expectedMsg = "Thank you";
-//        String actualMsg = create.messageEle().getText();
-//        System.out.println(actualMsg);
-//        Assert.assertEquals(expectedMsg,actualMsg);
+       System.out.println(driver.getCurrentUrl());
+       String expectedMsg = "Thank you";
+       String actualMsg = create.messageEle().getText();
+       System.out.println(actualMsg);
+       Assert.assertEquals(expectedMsg,actualMsg);
         String expectedUrl = "https://demo.nopcommerce.com/onepagecheckout#opc-confirm_order";
         String actualUrl = driver.getCurrentUrl();
         Assert.assertTrue(actualUrl.contains(expectedUrl));
